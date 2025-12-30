@@ -185,6 +185,12 @@ header nav .nav-sections ul > li > ul > li {
   font-weight: 400;
 }
 
+header nav .nav-tools .icon-search img {
+  position: relative;
+  top: 2px;
+  filter: invert(1);
+}
+
 @media (width >= 900px) {
   header nav .nav-sections {
     display: block;
@@ -205,9 +211,9 @@ header nav .nav-sections ul > li > ul > li {
   header nav .nav-sections .nav-drop::after {
     content: '';
     display: inline-block;
-    position: absolute;
-    top: 0.5em;
-    right: 2px;
+    position: relative;
+    top: -2px;
+    right: -8px;
     transform: rotate(135deg);
     width: 6px;
     height: 6px;
@@ -217,8 +223,7 @@ header nav .nav-sections ul > li > ul > li {
   }
 
   header nav .nav-sections .nav-drop[aria-expanded='true']::after {
-    top: unset;
-    bottom: 0.5em;
+    top: 2px;
     transform: rotate(315deg);
   }
 
@@ -230,6 +235,9 @@ header nav .nav-sections ul > li > ul > li {
 
   header nav .nav-sections .default-content-wrapper > ul > li {
     flex: 0 1 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     position: relative;
   }
 
@@ -241,9 +249,9 @@ header nav .nav-sections ul > li > ul > li {
   header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] > ul {
     display: block;
     position: absolute;
-    left: -24px;
+    left: 0px;
     width: 200px;
-    top: 150%;
+    top: 64px;
     padding: 16px;
     background-color: var(--light-color);
     white-space: initial;
