@@ -1,9 +1,9 @@
-# Your Project's Title...
-Your project's description...
+# EDS Lab
+Just messing around
 
 ## Environments
-- Preview: https://main--{repo}--{owner}.aem.page/
-- Live: https://main--{repo}--{owner}.aem.live/
+- Preview: https://main--eds-lab--bernardlau2267.aem.page/
+- Live: https://main--eds-lab--bernardlau2267.aem.live/
 
 ## Documentation
 
